@@ -1,0 +1,22 @@
+{% extends "../base.html" %}{% block content %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">username</th>
+      <th scope="col">age</th>
+      <th scope="col">gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ele in data %}
+    <tr>
+      <th scope="row">1</th>
+      <td>{ele.name}</td>
+      <td>{ele.age}</td>
+      <td>{ele.gender}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
