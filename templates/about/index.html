@@ -1,22 +1,22 @@
-{% extends "../base.html" %}{% block content %}
+{% extends "../base.html" %}{% block content %} {% comment %}
 <table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">username</th>
-      <th scope="col">age</th>
+      <th scope="col">name</th>
       <th scope="col">gender</th>
+      <th scope="col">image</th>
     </tr>
   </thead>
   <tbody>
-    {% for ele in data %}
+    {% for ele in admins %}
     <tr>
       <th scope="row">1</th>
       <td>{ele.name}</td>
-      <td>{ele.age}</td>
       <td>{ele.gender}</td>
+      <td>{ele.image}</td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
-{% endblock %}
+{% endcomment %} {{admins}} {% endblock %}
